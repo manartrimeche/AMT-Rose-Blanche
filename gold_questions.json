@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Quelle enzyme est recommandée pour améliorer la fraîcheur et prolonger la durée de vie du pain ?",
+    "expected_docs": ["BVZyme A FRESH101", "BVZyme A FRESH202", "BVZyme A FRESH303"]
+  },
+  {
+    "question": "Quel est le dosage recommandé pour la transglutaminase BVZyme TG MAX63 ?",
+    "expected_docs": ["BVZyme TG MAX63"]
+  },
+  {
+    "question": "Quelle enzyme utiliser pour améliorer la coloration de la croûte du pain ?",
+    "expected_docs": ["BVZyme AMG1400", "BVZyme AMG880"]
+  },
+  {
+    "question": "Quel produit n'est pas une enzyme dans la gamme ?",
+    "expected_docs": ["Acide Ascorbique (E300)"]
+  },
+  {
+    "question": "Quelle est la différence entre une xylanase fongique et une xylanase bactérienne ?",
+    "expected_docs": ["BVZyme HCF MAX X", "BVZyme HCB708"]
+  },
+  {
+    "question": "Quelle lipase nécessite le dosage le plus faible ?",
+    "expected_docs": ["BVZyme L MAX X", "BVZyme L MAX63"]
+  },
+  {
+    "question": "Quelles enzymes sont utilisées pour renforcer le réseau de gluten ?",
+    "expected_docs": ["BVZyme GOX 110", "BVZyme TG MAX63", "BVZyme TG MAX64"]
+  },
+  {
+    "question": "Quel est le dosage de l'acide ascorbique pour les pâtes surgelées ?",
+    "expected_docs": ["Acide Ascorbique (E300)"]
+  },
+  {
+    "question": "Quelle enzyme a une activité de 23 500 XylH/g ?",
+    "expected_docs": ["BVZyme HCF MAX X"]
+  },
+  {
+    "question": "Quelles sont les applications de la glucose oxydase BVZyme GOX 110 ?",
+    "expected_docs": ["BVZyme GOX 110"]
+  },
+  {
+    "question": "Quelle alpha-amylase fongique a l'activité la plus élevée en SKB/g ?",
+    "expected_docs": ["BVZyme AF110", "BVZyme AF220", "BVZyme AF330"]
+  },
+  {
+    "question": "Quelle enzyme utiliser pour la standardisation de la farine au moulin ?",
+    "expected_docs": ["BVZyme HCF MAX X", "BVZyme HCF MAX63", "BVZyme HCF MAX64"]
+  },
+  {
+    "question": "Quelles sont les conditions de stockage des enzymes BVZyme ?",
+    "expected_docs": ["BVZyme AF110", "BVZyme TG MAX63", "BVZyme L MAX X"]
+  },
+  {
+    "question": "Quelle enzyme améliore la structure de la mie et le volume du pain ?",
+    "expected_docs": ["BVZyme L MAX X", "BVZyme L MAX63", "BVZyme L55"]
+  },
+  {
+    "question": "Quel est le dosage recommandé pour BVZyme HCB708 xylanase bactérienne ?",
+    "expected_docs": ["BVZyme HCB708"]
+  },
+  {
+    "question": "Quelle enzyme est produite à partir d'Aspergillus niger ?",
+    "expected_docs": ["BVZyme AMG1400", "BVZyme AMG880", "BVZyme L MAX X", "BVZyme GOX 110"]
+  },
+  {
+    "question": "Quelles enzymes de type maltogenic amylase améliorent le moelleux ?",
+    "expected_docs": ["BVZyme A SOFT205", "BVZyme A SOFT305", "BVZyme A SOFT405"]
+  },
+  {
+    "question": "Quelle est la formule chimique de l'acide ascorbique ?",
+    "expected_docs": ["Acide Ascorbique (E300)"]
+  },
+  {
+    "question": "Quelles transglutaminases sont disponibles dans la gamme BVZyme ?",
+    "expected_docs": ["BVZyme TG MAX63", "BVZyme TG MAX64", "BVZyme TG881", "BVZyme TG883"]
+  },
+  {
+    "question": "Quelle enzyme utiliser pour améliorer la tolérance de la pâte ?",
+    "expected_docs": ["BVZyme HCF MAX X", "BVZyme GOX 110", "BVZyme L MAX X"]
+  },
+  {
+    "question": "Quel est le mécanisme d'action de l'amyloglucosidase ?",
+    "expected_docs": ["BVZyme AMG1400", "BVZyme AMG880"]
+  },
+  {
+    "question": "Quelle est l'activité enzymatique de BVZyme L55 en U/g ?",
+    "expected_docs": ["BVZyme L55"]
+  },
+  {
+    "question": "Quelles enzymes peuvent remplacer l'acide ascorbique comme renforçateur de gluten ?",
+    "expected_docs": ["BVZyme GOX 110", "Acide Ascorbique (E300)"]
+  },
+  {
+    "question": "Quel est le dosage maximal autorisé pour l'acide ascorbique en panification ?",
+    "expected_docs": ["Acide Ascorbique (E300)"]
+  },
+  {
+    "question": "Quelles xylanases fongiques sont disponibles et quels sont leurs dosages ?",
+    "expected_docs": ["BVZyme HCF MAX X", "BVZyme HCF MAX63", "BVZyme HCF MAX64", "BVZyme HCF400", "BVZyme HCF500", "BVZyme HCF600"]
+  }
+]

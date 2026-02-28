@@ -1,0 +1,76 @@
+mode,question,recall@3,mrr@3,retrieved_1,retrieved_2,retrieved_3
+vector,Quelle enzyme est recommandée pour améliorer la fraîcheur et prolonger la durée de vie du pain ?,0.3333333333333333,1.0,BVZyme A FRESH303,BVZyme A SOFT205,BVZyme A SOFT405
+vector,Quel est le dosage recommandé pour la transglutaminase BVZyme TG MAX63 ?,1.0,1.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme TG MAX63
+vector,Quelle enzyme utiliser pour améliorer la coloration de la croûte du pain ?,1.0,1.0,BVZyme AMG1400,BVZyme AMG880,BVZyme A SOFT205
+vector,Quel produit n'est pas une enzyme dans la gamme ?,0.0,0.0,BVZyme TG MAX63,BVZyme L55,BVZyme L MAX X
+vector,Quelle est la différence entre une xylanase fongique et une xylanase bactérienne ?,0.5,0.5,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme HCF MAX63
+vector,Quelle lipase nécessite le dosage le plus faible ?,0.5,0.5,BVZyme L MAX64,BVZyme L MAX X,BVZyme L55
+vector,Quelles enzymes sont utilisées pour renforcer le réseau de gluten ?,0.6666666666666666,1.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme GO MAX 63
+vector,Quel est le dosage de l'acide ascorbique pour les pâtes surgelées ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+vector,Quelle enzyme a une activité de 23 500 XylH/g ?,1.0,1.0,BVZyme HCF MAX X,BVZyme AF220,BVZyme HCB709
+vector,Quelles sont les applications de la glucose oxydase BVZyme GOX 110 ?,1.0,1.0,BVZyme GOX 110,BVZyme GO MAX 65,BVZyme GO MAX 63
+vector,Quelle alpha-amylase fongique a l'activité la plus élevée en SKB/g ?,0.6666666666666666,0.5,BVZyme AF SX,BVZyme AF220,BVZyme AF330
+vector,Quelle enzyme utiliser pour la standardisation de la farine au moulin ?,0.6666666666666666,1.0,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme TG MAX64
+vector,Quelles sont les conditions de stockage des enzymes BVZyme ?,0.0,0.0,BVZyme A FRESH101,BVZyme A FRESH303,BVZyme A FRESH202
+vector,Quelle enzyme améliore la structure de la mie et le volume du pain ?,0.0,0.0,BVZyme A SOFT305,BVZyme A SOFT205,BVZyme A SOFT405
+vector,Quel est le dosage recommandé pour BVZyme HCB708 xylanase bactérienne ?,1.0,1.0,BVZyme HCB708,BVZyme HCB708,BVZyme HCB709
+vector,Quelle enzyme est produite à partir d'Aspergillus niger ?,0.25,0.5,BVZyme GO MAX 63,BVZyme L MAX X,BVZyme AF330
+vector,Quelles enzymes de type maltogenic amylase améliorent le moelleux ?,0.0,0.0,BVZyme A FRESH202,BVZyme A FRESH101,BVZyme A FRESH303
+vector,Quelle est la formule chimique de l'acide ascorbique ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+vector,Quelles transglutaminases sont disponibles dans la gamme BVZyme ?,0.5,1.0,BVZyme TG881,BVZyme TG883,BVZyme TG881
+vector,Quelle enzyme utiliser pour améliorer la tolérance de la pâte ?,0.3333333333333333,0.3333333333333333,BVZyme GO MAX 63,BVZyme GO MAX 65,BVZyme GOX 110
+vector,Quel est le mécanisme d'action de l'amyloglucosidase ?,1.0,1.0,BVZyme AMG880,BVZyme AMG1400,BVZyme AMG880
+vector,Quelle est l'activité enzymatique de BVZyme L55 en U/g ?,0.0,0.0,BVZyme A SOFT205,BVZyme A FRESH202,BVZyme AF SX
+vector,Quelles enzymes peuvent remplacer l'acide ascorbique comme renforçateur de gluten ?,0.5,0.3333333333333333,BVZyme TG MAX63,BVZyme TG MAX64,Acide Ascorbique (E300)
+vector,Quel est le dosage maximal autorisé pour l'acide ascorbique en panification ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+vector,Quelles xylanases fongiques sont disponibles et quels sont leurs dosages ?,0.3333333333333333,1.0,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme HCF MAX X
+hybrid,Quelle enzyme est recommandée pour améliorer la fraîcheur et prolonger la durée de vie du pain ?,0.3333333333333333,1.0,BVZyme A FRESH303,BVZyme A SOFT205,BVZyme A SOFT405
+hybrid,Quel est le dosage recommandé pour la transglutaminase BVZyme TG MAX63 ?,1.0,1.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme TG MAX63
+hybrid,Quelle enzyme utiliser pour améliorer la coloration de la croûte du pain ?,1.0,1.0,BVZyme AMG1400,BVZyme AMG880,BVZyme A SOFT205
+hybrid,Quel produit n'est pas une enzyme dans la gamme ?,0.0,0.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme L55
+hybrid,Quelle est la différence entre une xylanase fongique et une xylanase bactérienne ?,0.5,0.5,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme HCF MAX63
+hybrid,Quelle lipase nécessite le dosage le plus faible ?,0.5,0.5,BVZyme L MAX64,BVZyme L MAX X,BVZyme GOX 110
+hybrid,Quelles enzymes sont utilisées pour renforcer le réseau de gluten ?,0.6666666666666666,1.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme GO MAX 63
+hybrid,Quel est le dosage de l'acide ascorbique pour les pâtes surgelées ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+hybrid,Quelle enzyme a une activité de 23 500 XylH/g ?,1.0,1.0,BVZyme HCF MAX X,BVZyme HCB709,BVZyme HCF MAX64
+hybrid,Quelles sont les applications de la glucose oxydase BVZyme GOX 110 ?,1.0,1.0,BVZyme GOX 110,BVZyme GO MAX 65,BVZyme GO MAX 63
+hybrid,Quelle alpha-amylase fongique a l'activité la plus élevée en SKB/g ?,0.6666666666666666,0.5,BVZyme AF SX,BVZyme AF220,BVZyme AF330
+hybrid,Quelle enzyme utiliser pour la standardisation de la farine au moulin ?,0.6666666666666666,1.0,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme TG MAX64
+hybrid,Quelles sont les conditions de stockage des enzymes BVZyme ?,0.0,0.0,BVZyme A FRESH101,BVZyme A FRESH303,BVZyme A FRESH202
+hybrid,Quelle enzyme améliore la structure de la mie et le volume du pain ?,0.0,0.0,BVZyme A SOFT405,BVZyme A SOFT305,BVZyme TG MAX63
+hybrid,Quel est le dosage recommandé pour BVZyme HCB708 xylanase bactérienne ?,1.0,1.0,BVZyme HCB708,BVZyme HCB708,BVZyme HCB709
+hybrid,Quelle enzyme est produite à partir d'Aspergillus niger ?,0.25,0.3333333333333333,BVZyme GO MAX 63,BVZyme GO MAX 65,BVZyme L MAX X
+hybrid,Quelles enzymes de type maltogenic amylase améliorent le moelleux ?,0.0,0.0,BVZyme A FRESH202,BVZyme A FRESH101,BVZyme A FRESH303
+hybrid,Quelle est la formule chimique de l'acide ascorbique ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+hybrid,Quelles transglutaminases sont disponibles dans la gamme BVZyme ?,0.75,1.0,BVZyme TG MAX64,BVZyme TG881,BVZyme TG883
+hybrid,Quelle enzyme utiliser pour améliorer la tolérance de la pâte ?,0.3333333333333333,0.3333333333333333,BVZyme GO MAX 63,BVZyme GO MAX 65,BVZyme GOX 110
+hybrid,Quel est le mécanisme d'action de l'amyloglucosidase ?,1.0,0.5,BVZyme TG MAX63,BVZyme AMG880,BVZyme AMG1400
+hybrid,Quelle est l'activité enzymatique de BVZyme L55 en U/g ?,0.0,0.0,BVZyme A SOFT205,BVZyme TG MAX64,BVZyme A FRESH202
+hybrid,Quelles enzymes peuvent remplacer l'acide ascorbique comme renforçateur de gluten ?,0.5,0.3333333333333333,BVZyme TG MAX64,BVZyme TG MAX63,Acide Ascorbique (E300)
+hybrid,Quel est le dosage maximal autorisé pour l'acide ascorbique en panification ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+hybrid,Quelles xylanases fongiques sont disponibles et quels sont leurs dosages ?,0.3333333333333333,1.0,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme HCF MAX X
+rerank,Quelle enzyme est recommandée pour améliorer la fraîcheur et prolonger la durée de vie du pain ?,0.3333333333333333,0.3333333333333333,BVZyme A SOFT205,BVZyme A SOFT405,BVZyme A FRESH303
+rerank,Quel est le dosage recommandé pour la transglutaminase BVZyme TG MAX63 ?,1.0,1.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme HCF MAX63
+rerank,Quelle enzyme utiliser pour améliorer la coloration de la croûte du pain ?,1.0,1.0,BVZyme AMG880,BVZyme AMG1400,BVZyme A SOFT205
+rerank,Quel produit n'est pas une enzyme dans la gamme ?,0.0,0.0,BVZyme TG MAX63,BVZyme TG881,BVZyme TG883
+rerank,Quelle est la différence entre une xylanase fongique et une xylanase bactérienne ?,0.5,1.0,BVZyme HCF MAX X,BVZyme HCF600,BVZyme HCF400
+rerank,Quelle lipase nécessite le dosage le plus faible ?,0.5,0.3333333333333333,BVZyme L MAX64,BVZyme L55,BVZyme L MAX X
+rerank,Quelles enzymes sont utilisées pour renforcer le réseau de gluten ?,0.6666666666666666,1.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme GO MAX 63
+rerank,Quel est le dosage de l'acide ascorbique pour les pâtes surgelées ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+rerank,Quelle enzyme a une activité de 23 500 XylH/g ?,1.0,1.0,BVZyme HCF MAX X,BVZyme HCF500,BVZyme HCB709
+rerank,Quelles sont les applications de la glucose oxydase BVZyme GOX 110 ?,1.0,1.0,BVZyme GOX 110,BVZyme GOX 110,BVZyme GO MAX 65
+rerank,Quelle alpha-amylase fongique a l'activité la plus élevée en SKB/g ?,0.6666666666666666,0.5,BVZyme AF SX,BVZyme AF220,BVZyme AF330
+rerank,Quelle enzyme utiliser pour la standardisation de la farine au moulin ?,0.6666666666666666,1.0,BVZyme HCF MAX64,BVZyme HCF MAX X,BVZyme TG MAX64
+rerank,Quelles sont les conditions de stockage des enzymes BVZyme ?,0.0,0.0,BVZyme A FRESH101,BVZyme A FRESH202,BVZyme GO MAX 65
+rerank,Quelle enzyme améliore la structure de la mie et le volume du pain ?,0.0,0.0,BVZyme A SOFT405,BVZyme A SOFT305,BVZyme A SOFT205
+rerank,Quel est le dosage recommandé pour BVZyme HCB708 xylanase bactérienne ?,1.0,1.0,BVZyme HCB708,BVZyme HCB708,BVZyme AMG880
+rerank,Quelle enzyme est produite à partir d'Aspergillus niger ?,0.5,0.5,BVZyme GO MAX 63,BVZyme AMG880,BVZyme L MAX X
+rerank,Quelles enzymes de type maltogenic amylase améliorent le moelleux ?,0.0,0.0,BVZyme A FRESH202,BVZyme A FRESH101,BVZyme A FRESH303
+rerank,Quelle est la formule chimique de l'acide ascorbique ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+rerank,Quelles transglutaminases sont disponibles dans la gamme BVZyme ?,0.75,1.0,BVZyme TG MAX64,BVZyme TG881,BVZyme TG883
+rerank,Quelle enzyme utiliser pour améliorer la tolérance de la pâte ?,0.3333333333333333,0.3333333333333333,BVZyme GO MAX 63,BVZyme GO MAX 65,BVZyme GOX 110
+rerank,Quel est le mécanisme d'action de l'amyloglucosidase ?,0.0,0.0,BVZyme TG MAX63,BVZyme TG MAX64,BVZyme TG883
+rerank,Quelle est l'activité enzymatique de BVZyme L55 en U/g ?,0.0,0.0,BVZyme A SOFT205,BVZyme A FRESH202,BVZyme AF SX
+rerank,Quelles enzymes peuvent remplacer l'acide ascorbique comme renforçateur de gluten ?,0.5,0.5,BVZyme TG MAX63,Acide Ascorbique (E300),BVZyme TG MAX64
+rerank,Quel est le dosage maximal autorisé pour l'acide ascorbique en panification ?,1.0,1.0,Acide Ascorbique (E300),Acide Ascorbique (E300),Acide Ascorbique (E300)
+rerank,Quelles xylanases fongiques sont disponibles et quels sont leurs dosages ?,0.3333333333333333,1.0,BVZyme HCF MAX X,BVZyme HCF MAX X,BVZyme HCF MAX64

@@ -1,7 +1,7 @@
 # RAG Enzyme Search — Module de Recherche Sémantique
 
 > Recherche sémantique intelligente sur un corpus de fiches techniques enzymatiques.
-> PostgreSQL + pgvector · sentence-transformers · Cross-Encoder reranking
+> PostgreSQL + numpy cosine · sentence-transformers · Cross-Encoder reranking
 
 ---
 
@@ -15,8 +15,8 @@
                                                       │
                                                       ▼
                                           ┌─────────────────────┐
-                                          │  PostgreSQL + pgvector│
-                                          │  (HNSW cosine index) │
+                                          │  PostgreSQL + numpy  │
+                                          │  (cosine similarity) │
                                           └──────────┬──────────┘
                                                       │
                      ┌────────────────────────────────┤
@@ -36,7 +36,7 @@
 
 | Mode | Description | Performance |
 |------|-------------|-------------|
-| `vector` | Cosine similarity pure (pgvector HNSW) | Rapide, bon baseline |
+| `vector` | Cosine similarity pure (numpy) | Rapide, bon baseline |
 | `hybrid` | 0.7×cosine + 0.3×BM25 (ts_rank_cd) | Meilleur recall lexical |
 | `rerank` | Hybrid + Cross-Encoder reranking | **Meilleure précision** |
 
@@ -45,7 +45,7 @@
 ## Prérequis
 
 - Python 3.10+
-- PostgreSQL 14+ avec extension [pgvector](https://github.com/pgvector/pgvector)
+- PostgreSQL 14+
 - ~1 Go RAM pour les modèles
 
 ---
@@ -105,7 +105,7 @@ Les fiches techniques enzymatiques sont dans `documents_md/` au format Markdown 
 ...
 ```
 
-34 fiches techniques couvrant : lipases, amylases, xylanases, transglutaminases, glucose oxydases, améliorants de panification.
+35 fiches techniques couvrant : lipases, amylases, xylanases, transglutaminases, glucose oxydases, améliorants de panification.
 
 ---
 
@@ -223,18 +223,20 @@ python evaluate.py --output results.csv
 
 | Mode | Recall@3 | MRR@3 |
 |------|----------|-------|
-| vector | ~0.45 | ~0.55 |
-| hybrid | ~0.55 | ~0.65 |
-| **rerank** | **~0.65** | **~0.75** |
+| vector | 0.5700 | 0.6667 |
+| **hybrid** | **0.5800** | **0.6400** |
+| rerank | 0.5500 | 0.6200 |
 
 ---
 
 ## Décisions techniques
 
-### Pourquoi pgvector + HNSW ?
-- Index HNSW : recall ~99% avec latence < 10ms sur ce volume
-- Pas besoin d'un moteur vectoriel externe (Pinecone, Qdrant)
-- Tout dans PostgreSQL : vector + full-text + métadonnées
+### Pourquoi PostgreSQL + numpy ?
+- Pour 251 fragments, le calcul numpy en Python est instantané (< 5ms)
+- Les vecteurs sont stockés comme `double precision[]` dans PostgreSQL
+- Pas besoin d'extension externe (pgvector): tout fonctionne nativement
+- Full-text search via `tsvector` + GIN index pour la composante lexicale
+- Architecture extensible : migration pgvector possible en ajoutant l'extension
 
 ### Pourquoi hybrid (vector + BM25) ?
 - Le vector seul manque les correspondances lexicales exactes (noms de produits, unités)
@@ -282,13 +284,14 @@ AMT-Rose-Blanche/
 ## Limites et améliorations
 
 ### Limites actuelles
-- Corpus limité à 34 documents (faible volume)
+- Corpus limité à 35 documents (faible volume)
 - Modèle all-MiniLM-L6-v2 : 384 dimensions, anglais-centré (les fiches sont bilingues FR/EN)
 - Pas de cache des embeddings de requêtes
 - Pas d'authentification sur l'API
 
 ### Améliorations possibles
 - **Modèle multilingue** : `paraphrase-multilingual-MiniLM-L12-v2` pour mieux gérer le français
+- **pgvector** : migration possible avec `VECTOR(384)` + index HNSW pour de grands corpus
 - **LLM generation** : ajouter une phase de génération (GPT/Mistral) après le retrieval
 - **Cache Redis** : cacher les embeddings de requêtes fréquentes
 - **UI Streamlit** : interface utilisateur graphique

@@ -105,10 +105,15 @@ def search_rerank(question: str, top_k: int | None = None) -> list[dict]:
     pairs = [(question, r["texte_fragment"]) for r in hybrid_results]
     rerank_scores = reranker.predict(pairs).tolist()
 
+    # Normaliser les scores rerank (min-max) avant combinaison
+    rerank_norm = _min_max_norm(rerank_scores)
+    vec_scores = [r["score_vec"] for r in hybrid_results]
+    vec_norm = _min_max_norm(vec_scores)
+
     for i, r in enumerate(hybrid_results):
         r["score_rerank"] = float(rerank_scores[i])
-        # Score final pondéré
-        r["score_final"] = 0.4 * r["score_vec"] + 0.6 * float(rerank_scores[i])
+        # Score final pondéré avec scores normalisés
+        r["score_final"] = 0.4 * vec_norm[i] + 0.6 * rerank_norm[i]
 
     hybrid_results.sort(key=lambda x: x["score_final"], reverse=True)
     return hybrid_results[:top_k]
